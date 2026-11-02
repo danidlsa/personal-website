@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning on Daniela de los Santos</title>
+    <link>https://danidlsa.netlify.app/tags/machine-learning/</link>
+    <description>Recent content in machine learning on Daniela de los Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://danidlsa.netlify.app/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Human mobility, urban studies and accessibility</title>
+      <link>https://danidlsa.netlify.app/publications/urban/</link>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://danidlsa.netlify.app/publications/urban/</guid>
+      <description>Some of my more recent work lives in the intersection of data science, urban studies and gender analysis. See some samples below! (Notice: some of these are unpublished working papers, while others are published policy briefs and book chapters.)
+-De los Santos, Daniela (2025). ‘Care Cartographies in Latin America and the Caribbean: digital tools for designing evidence-based care policies’. UNDP-LAC – Policy Notes 35. Read it in English or Spanish.</description>
+    </item>
+    
+  </channel>
+</rss>

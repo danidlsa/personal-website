@@ -1,0 +1,6 @@
+/* Skills are grouped by area ("**Area:** tools"), so they read better in a single wide column.
+   index.css loads after this file, hence the extra specificity. */
+section#about ul {
+    grid-template-columns: 1fr;
+    max-width: 760px;
+}

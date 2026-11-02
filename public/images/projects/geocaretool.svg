@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="600" fill="#eef4f3"/>
+  <text x="600" y="78" font-size="40" font-weight="700" fill="#1f4e4a" text-anchor="middle">GeoCareTool</text>
+  <text x="600" y="116" font-size="22" fill="#4a7d78" text-anchor="middle">Python library · UNDP Care Georeferencing Tool</text>
+
+  <!-- pipeline steps -->
+  <g font-size="19" font-weight="700" text-anchor="middle">
+    <rect x="40" y="170" width="190" height="96" rx="16" fill="#ffffff" stroke="#9cc5bf" stroke-width="3"/>
+    <text x="135" y="212" fill="#1f4e4a">Scraping</text>
+    <text x="135" y="240" font-size="16" font-weight="400" fill="#4a7d78">Google Places</text>
+
+    <rect x="270" y="170" width="190" height="96" rx="16" fill="#ffffff" stroke="#9cc5bf" stroke-width="3"/>
+    <text x="365" y="212" fill="#1f4e4a">Cleaning</text>
+    <text x="365" y="240" font-size="16" font-weight="400" fill="#4a7d78">rule-based</text>
+
+    <rect x="500" y="170" width="190" height="96" rx="16" fill="#ffffff" stroke="#9cc5bf" stroke-width="3"/>
+    <text x="595" y="212" fill="#1f4e4a">Enrichment</text>
+    <text x="595" y="240" font-size="16" font-weight="400" fill="#4a7d78">place details</text>
+
+    <rect x="730" y="170" width="190" height="96" rx="16" fill="#ffffff" stroke="#9cc5bf" stroke-width="3"/>
+    <text x="825" y="212" fill="#1f4e4a">Accessibility</text>
+    <text x="825" y="240" font-size="16" font-weight="400" fill="#4a7d78">walk + transit</text>
+
+    <rect x="960" y="170" width="200" height="96" rx="16" fill="#e0675a" stroke="#e0675a" stroke-width="3"/>
+    <text x="1060" y="212" fill="#ffffff">Care deserts</text>
+    <text x="1060" y="240" font-size="16" font-weight="400" fill="#ffffff">by population group</text>
+  </g>
+  <g stroke="#4a7d78" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M232 218 H266 M256 208 L266 218 L256 228"/>
+    <path d="M462 218 H496 M486 208 L496 218 L486 228"/>
+    <path d="M692 218 H726 M716 208 L726 218 L716 228"/>
+    <path d="M922 218 H956 M946 208 L956 218 L946 228"/>
+  </g>
+
+  <!-- hex map with care facilities, isochrones and a desert -->
+  <g transform="translate(330 300)">
+    <g stroke="#ffffff" stroke-width="3">
+      <path d="M40 0 L80 23 L80 69 L40 92 L0 69 L0 23Z" fill="#b8dcd6"/>
+      <path d="M120 0 L160 23 L160 69 L120 92 L80 69 L80 23Z" fill="#8fc8bf"/>
+      <path d="M200 0 L240 23 L240 69 L200 92 L160 69 L160 23Z" fill="#b8dcd6"/>
+      <path d="M280 0 L320 23 L320 69 L280 92 L240 69 L240 23Z" fill="#f2b8b0"/>
+      <path d="M360 0 L400 23 L400 69 L360 92 L320 69 L320 23Z" fill="#e0675a"/>
+      <path d="M440 0 L480 23 L480 69 L440 92 L400 69 L400 23Z" fill="#f2b8b0"/>
+      <path d="M80 69 L120 92 L120 138 L80 161 L40 138 L40 92Z" fill="#8fc8bf"/>
+      <path d="M160 69 L200 92 L200 138 L160 161 L120 138 L120 92Z" fill="#6fb3a8"/>
+      <path d="M240 69 L280 92 L280 138 L240 161 L200 138 L200 92Z" fill="#b8dcd6"/>
+      <path d="M320 69 L360 92 L360 138 L320 161 L280 138 L280 92Z" fill="#f2b8b0"/>
+      <path d="M400 69 L440 92 L440 138 L400 161 L360 138 L360 92Z" fill="#e0675a"/>
+      <path d="M480 69 L520 92 L520 138 L480 161 L440 138 L440 92Z" fill="#f2b8b0"/>
+      <path d="M40 138 L80 161 L80 207 L40 230 L0 207 L0 161Z" fill="#b8dcd6"/>
+      <path d="M120 138 L160 161 L160 207 L120 230 L80 207 L80 161Z" fill="#8fc8bf"/>
+      <path d="M200 138 L240 161 L240 207 L200 230 L160 207 L160 161Z" fill="#b8dcd6"/>
+      <path d="M280 138 L320 161 L320 207 L280 230 L240 207 L240 161Z" fill="#b8dcd6"/>
+      <path d="M360 138 L400 161 L400 207 L360 230 L320 207 L320 161Z" fill="#f2b8b0"/>
+      <path d="M440 138 L480 161 L480 207 L440 230 L400 207 L400 161Z" fill="#b8dcd6"/>
+    </g>
+    <circle cx="160" cy="115" r="96" fill="none" stroke="#1f4e4a" stroke-width="3" stroke-dasharray="10 8"/>
+    <g fill="#1f4e4a" stroke="#ffffff" stroke-width="3">
+      <circle cx="160" cy="115" r="12"/>
+      <circle cx="80" cy="46" r="10"/>
+      <circle cx="440" cy="184" r="10"/>
+    </g>
+  </g>
+</svg>

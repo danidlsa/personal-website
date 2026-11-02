@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>digital violence on Daniela de los Santos</title>
+    <link>https://danidlsa.netlify.app/tags/digital-violence/</link>
+    <description>Recent content in digital violence on Daniela de los Santos</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Nov 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://danidlsa.netlify.app/tags/digital-violence/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gender, digital spaces and AI</title>
+      <link>https://danidlsa.netlify.app/publications/digital-gender/</link>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://danidlsa.netlify.app/publications/digital-gender/</guid>
+      <description>Some of my recent work uses social media data, natural language processing and AI models to study gender inequalities in digital spaces: from violence against women in leadership positions to the digital strategies of feminist movements.
+-De los Santos, Daniela, Martin, Guillermina, Urriola, Ivonne &amp;amp; Voria, Andrea (2025). ‘Entre el menosprecio y las amenazas: análisis de violencia digital contra las mujeres en ocho países de Iberoamérica’. UNDP-LAC – Policy Notes 38.</description>
+    </item>
+    
+  </channel>
+</rss>

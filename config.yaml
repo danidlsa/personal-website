@@ -32,7 +32,7 @@ Menus:
     - identifier: cv
       name: CV
       title: CV
-      url: "https://drive.google.com/file/d/1gNswkWbyFDPoeu2f_MSGYo0BRTFqWaw8/view?usp=sharing"
+      url: "/cv-daniela-de-los-santos.pdf"
       weight: 2
 
     #Dropdown menu
@@ -68,6 +68,9 @@ params:
   # This requires your images to be uploaded + hosted on Cloudinary
   # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
   # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Loads static/style.css (one-column skills list)
+  customCSS: true
 
   # Whether the fade animations on the home page will be enabled
   animate: true
@@ -129,7 +132,7 @@ params:
     button:
       enable: true
       name: "CV"
-      url: "https://drive.google.com/file/d/1gNswkWbyFDPoeu2f_MSGYo0BRTFqWaw8/view?usp=sharing"
+      url: "/cv-daniela-de-los-santos.pdf"
       download: true
       newPage: true
     socialLinks:
@@ -150,22 +153,24 @@ params:
     title: "About Me"
     # image: "/images/me.png"
     content: |-
-      I hold an MSc in Data Science from the Barcelona School of Economics and a BSc in Sociology from the Catholic University of Uruguay. My expertise spans data-driven social research and public policy analysis, machine and deep learning modeling, data processing and visualization, geospatial analysis, as well as scientific dissemination and teaching. You can check some of my publications [here](/publications).
-      
-      
+      I hold an MSc in Data Science from the Barcelona School of Economics and a BSc in Sociology from the Catholic University of Uruguay. My expertise spans data-driven social research, gender and public policy analysis, machine and deep learning modeling, natural language processing, data processing and visualization, geospatial analysis, as well as scientific dissemination and teaching.
+
+      Since 2020 I have been working at the United Nations Development Programme (UNDP) Regional Hub for Latin America and the Caribbean, where I focus on leveraging data science tools for the design, implementation and evaluation of public policies aimed at reducing gender and social inequalities, with a particular emphasis on comprehensive care systems. You can check some of my publications [here](/publications).
+
+
     skills:
       enable: true
-      title: "These are some of the programming languages and technologies I'm currently using:"
+      title: "These are some of the tools and methods I work with:"
       items:
-        - "Python"
-        - "R"
-        - "SQL"
-        - "AWS"
-        - "H2o.ai"
-        - "PowerBI / Tableau"
-        - "Stata"
-        - "ArcGIS/QGIS"
-        - "Shiny"
+        - "**Applied AI:** LLM-based classification and information extraction, NLP, machine and deep learning (scikit-learn, PyTorch)"
+        - "**Python:** pandas, NumPy, httpx, pydantic, pytest"
+        - "**R:** tidyverse, Shiny, R Markdown / pagedown"
+        - "**Geospatial:** QGIS, ArcGIS and StoryMaps, PostGIS, OpenStreetMap, accessibility modeling. Python (GeoPandas, Shapely 2, GeoParquet, DuckDB Spatial, H3, OSMnx, r5py) and R (sf, leaflet)"
+        - "**Data collection:** web scraping, APIs (Google Places, Nominatim, Wikidata), ODK / KoboToolbox / QField"
+        - "**Web and visualization:** Leaflet, static sites and templating (Jinja2, Hugo), dashboards (Shiny, PowerBI, Tableau), accessible design (WCAG 2.1 AA)"
+        - "**Automation and cloud:** Git, GitHub Actions, scheduled data pipelines, AWS / Azure"
+        - "**Statistics:** Stata, survey design, econometrics"
+        - "**AI-assisted development:** agentic coding tools (e.g. Claude Code) to design, build and ship data products end to end"
         
 
   # Experience
@@ -173,17 +178,18 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Inclusive Growth and Gender Specialist"
+      - job: "Project Analyst - Inclusive Growth, Social Protection and Gender"
         company: "UNDP"
         companyUrl: "https://www.undp.org/latin-america"
         date: "2020 - current"
         featuredLink:
           enable: true
-          name: "Explore the Care Georeferencing Tool"
-          url: "https://bit.ly/undp_georeferencing_care"
+          name: "Read 'Care Cartographies' (2025)"
+          url: "https://www.undp.org/latin-america/publications/care-cartographies-latin-america-and-caribbean-digital-tools-designing-evidence-based-care-policies"
         info:
-          enable: false
-        content: "As a part of the Gender Cluster in the United Nations Development Programme (LAC), I am responsible for (among other things) designing and implementing big data-based tools to support governments in the design, implementation, monitoring and evaluation of inclusive care and social protection policies. A good example of this is the Care Georeferencing Tool, which helps build territory-level diagnoses of care supply and demand, as well as spot accessibility barriers for vulnerable population."
+          enable: true
+          content: "Project Analyst (2024 - current) · Inclusive Growth and Gender Specialist (2023 - 2024) · Programme Associate (2021 - 2022) · Consultant for the COVID-19 Response (2020 - 2021)"
+        content: "As a part of the Gender Team in the UNDP Regional Hub for Latin America and the Caribbean, I develop data-driven tools and methodologies in the gender, inclusive growth and social protection areas, and provide technical assistance to UNDP country offices and governments. I designed and lead the Care Georeferencing Tool, which builds territory-level diagnoses of care supply, demand and accessibility (spotting 'care deserts') and has been implemented in countries such as Colombia, Peru, Uruguay, Dominican Republic, El Salvador, Honduras, Guatemala and Zanzibar (Tanzania). Recently, I also led a study that used social media scraping and AI models (GPT, BERT) to analyze digital violence against women in leadership positions in eight Ibero-American countries."
 
       - job: "Researcher"
         company: "CIEDUR"
@@ -246,12 +252,12 @@ params:
         date: "2022 - 2023"
         GPA: "8.8 out of 10.0"
         content: |-
-          Thesis: ‘Forecasting Global Refugee Flows: A Machine Learning Approach using Non-conventional Data’. 
-          Grade: 10 (A+).
+          Thesis: ‘Forecasting Global Refugee Flows: A Machine Learning Approach using Non-conventional Data’.
+          Grade: 10 (A+). Selected as one of the Top 3 Master's Theses of the class of 2022-2023.
         featuredLink:
           enable: true
           name: "Master's Thesis"
-          url: "https://github.com/danidlsa/refugees"
+          url: "https://repositori.upf.edu/handle/10230/58359"
       - title: "BSc in Sociology"
         school:
           name: "Catholic University of Uruguay"
@@ -293,12 +299,105 @@ params:
     enable: true
     title: "Featured Projects"
     items:
+      - title: Care Georeferencing Tool
+        content: Big data-based tool that maps care supply, demand and accessibility to locate 'care deserts'. Implemented in Colombia, Peru, Uruguay, Dominican Republic, El Salvador, Honduras, Guatemala and Zanzibar (Tanzania).
+        image: /images/publications/care2.png
+        featured:
+          name: View report
+          link: https://www.undp.org/latin-america/publications/care-cartographies-latin-america-and-caribbean-digital-tools-designing-evidence-based-care-policies
+        badges:
+          - "Google Places"
+          - "OSRM"
+          - "webscraping"
+          - "crowdmapping"
+          - "PostGIS"
+          - "QField"
+        links:
+          - icon: fab fa-youtube
+            url: https://www.youtube.com/watch?v=hvQtx95w8Ns&ab_channel=AmericalatinageneraRSCLACPNUD
+
+      - title: GeoCareTool (Python library)
+        content: Open-source library behind the Care Georeferencing Tool. Scrapes and cleans care facilities, models walking and public transport accessibility, and classifies care deserts by population group.
+        image: /images/projects/geocaretool.svg
+        featured:
+          name: View code
+          link: https://github.com/danidlsa/GeoCareTool
+        badges:
+          - "Python"
+          - "Google Places API"
+          - "OpenStreetMap"
+          - "r5py"
+          - "GTFS"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/danidlsa/GeoCareTool
+
+      - title: Care and Support Map for Persons with Disabilities (Bogotá)
+        content: Co-design, together with IDECA and Bogotá's Mayor's Office, of an accessible map of public care and support services for persons with disabilities and their caregivers. Includes an open-source demo built with Python and Leaflet.
+        image: /images/projects/bogota-care-map.jpg
+        featured:
+          name: View StoryMap
+          link: https://storymaps.arcgis.com/stories/500cf504d0734b4eb05c204a59e4e4a2
+        badges:
+          - "ArcGIS StoryMaps"
+          - "Python"
+          - "Leaflet"
+          - "WCAG 2.1 AA"
+        links:
+          - icon: fas fa-globe
+            url: https://danidlsa.github.io/MapaCuidadosyApoyosBogota/
+          - icon: fab fa-github
+            url: https://github.com/danidlsa/MapaCuidadosyApoyosBogota
+
+      - title: Care and Support Map for Persons with Disabilities (Zanzibar)
+        content: Dashboard mapping care, health and education services for persons with disabilities in Unguja, Zanzibar, built with the Care Georeferencing Tool and hosted by the Zanzibar National Council for Persons with Disabilities.
+        image: /images/projects/zanzibar-care-map.jpg
+        featured:
+          name: View map
+          link: https://jumuishi.ncpdsmz.go.tz/
+        badges:
+          - "R Shiny"
+          - "Leaflet"
+          - "ODK fieldwork"
+          - "English / Kiswahili"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/danidlsa/pwd-zanzibar
+
+      - title: La Gestoría Cultural
+        content: Non-profit side project that gathers Montevideo's cultural agenda (music, theater, film, dance and more) in one place. Scrapes 24 public sources three times a day, deduplicates and classifies around 700 events, and publishes a static site.
+        image: /images/projects/la-gestoria-cultural.svg
+        featured:
+          name: Visit site
+          link: http://lagestoriacultural.uy/
+        badges:
+          - "Python"
+          - "web scraping"
+          - "pydantic"
+          - "GitHub Actions"
+          - "Jinja2"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/danidlsa/la-gestoria-cultural
+
+      - title: Digital Violence Against Women in Ibero-America
+        content: Social media scraping and AI models to identify, classify and characterize digital violence against women in leadership positions in eight countries (UNDP - SEGIB).
+        image: /images/publications/digital-violence.svg
+        featured:
+          name: View policy note
+          link: https://www.undp.org/es/latin-america/publicaciones/entre-el-menosprecio-y-las-amenazas-analisis-de-violencia-digital-contra-las-mujeres-en-ocho-paises-de-iberoamerica
+        badges:
+          - "NLP"
+          - "GPT models"
+          - "BERT"
+          - "webscraping"
+
       - title: Forecasting Refugee Flows
-        content: A Machine Learning Approach using Non-conventional Data such as Google Trends and GDELT, in collaboration with UNHCR.
+        content: A Machine Learning Approach using Non-conventional Data such as Google Trends and GDELT, in collaboration with UNHCR. Top 3 Master's Thesis (BSE, 2023).
         image: /images/publications/refugees.png
         featured:
           name: View project
-          link: https://github.com/danidlsa/refugees/blob/main/document/Master_Thesis.pdf
+          link: https://repositori.upf.edu/handle/10230/58359
         badges:
           - "decision trees"
           - "gradient boosting"
@@ -306,22 +405,6 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/danidlsa/refugees
-
-      - title: Care georeferencing tool
-        content: Big data-based tool that generates diagnoses of supply, demand and accessibility deficiencies in care policy.
-        image: /images/publications/care2.png
-        featured:
-          name: View report
-          link: https://www.undp.org/latin-america/publications/mapping-care-innovative-tools-georeferencing-care-supply-and-demand-latin-america-and-caribbean
-        badges:
-          - "Google Places"
-          - "Overpass"
-          - "OSRM"
-          - "webscraping"
-          - "crowdmapping"
-        links:
-          - icon: fab fa-youtube
-            url: https://www.youtube.com/watch?v=hvQtx95w8Ns&ab_channel=AmericalatinageneraRSCLACPNUD
 
       - title: Detecting Informal Settlements using Satellite Imagery
         content: Exercise to map informal settlements across the globe using VHR satellite imagery and Convolutional Neural Networks.
@@ -337,38 +420,6 @@ params:
           - icon: fab fa-github
             url: https://github.com/danidlsa/informal_settlements/tree/main
             
-      - title: Optimal Bike Station Placement
-        content: Network analysis to optimize bike-sharing systems decision-making process.
-        image: /images/publications/bikes.png
-        featured:
-          name: View paper
-          link: https://drive.google.com/file/d/1qtkXxkFI0FyhUHE_oyORtUFXjI8ndnWN/view
-        badges:
-          - "graph network"
-          - "pytrans"
-          - "igraph"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/danidlsa/bike-stations
-            
-      - title: Using NLP models to classify people's stances on Twitter
-        content: Exercise to classify stances in tweets about abortion, atheism, feminism and climate.
-        image: /images/publications/twitter.png
-        featured:
-          name: View project
-          link: https://github.com/danidlsa/nlp-final-tweeteval
-        badges:
-          - "BERT"
-          - "LSTM"
-          - "RNN"
-          - "tensorflow"
-          - "keras"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/danidlsa/nlp-final-tweeteval
-            
-                
-            
       - title: Browse publications by theme.
         content: Here you'll find refereed papers, book chapters, reports, working papers and others.
         image: /images/publications/handbook 2.png
@@ -383,9 +434,7 @@ params:
   contact:
     enable: true
     # title: "Custom Name"
-    content: Feel free to email me, star me on [Github](https://github.com/danidlsa) or contact me via [LinkedIn](https://www.linkedin.com/in/danidlsa/)
-    email: daniela.de@bse.eu
-    btnName: Mail me
+    content: Feel free to contact me via [LinkedIn](https://www.linkedin.com/in/danidlsa/) or star me on [Github](https://github.com/danidlsa).
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'

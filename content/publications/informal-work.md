@@ -1,6 +1,6 @@
 ---
 author: Daniela de los Santos
-date: "2023-10-08"
+date: "2026-10-31"
 description: "Informal work, labor markets and gender"
 draft: false
 github_link: 
@@ -19,7 +19,9 @@ toc: null
 
 Here are some of my publications regarding informal work, gender and labor markets in the LAC region.
 
--**De los Santos, Daniela & Fynn, Inés** (2023). ‘From Safety Net to Safety Trap: Informality and Telework During the Coronavirus Pandemic in Latin America’. American Behavioral Scientist (ABS). Read it [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9974375/).
+-**De los Santos, Daniela & Fynn, Inés** (2024). ‘From Safety Net to Safety Trap: Informality and Telework During the Coronavirus Pandemic in Latin America’. *American Behavioral Scientist*, 68(8), 1032-1051. Read it [here](https://doi.org/10.1177/00027642231155365) (open access version [here](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9974375/)).
+
+-**Espino, Alma, De los Santos, Daniela & Fernández, Mayra** (2022). ‘Género y mercado laboral en Uruguay y la región: secuelas de la pandemia’. CIEDUR - Gender and Commerce Network.
 
 -**Espino, Alma & De los Santos, Daniela** (2021). ‘Labour markets and informal work in the Global South’. In: Berik, Günseli y Kongar, Ebru (eds.). *The Routledge Handbook of Feminist Economics*. Routledge. Available [here](https://doi.org/10.4324/9780429020612).
 

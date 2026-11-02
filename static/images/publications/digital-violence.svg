@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1200" height="700" fill="#f4f1fa"/>
+  <!-- feed of posts -->
+  <g>
+    <rect x="90" y="80" width="520" height="96" rx="18" fill="#ffffff" stroke="#d9d2ea" stroke-width="2"/>
+    <circle cx="140" cy="128" r="26" fill="#cfc5e6"/>
+    <rect x="186" y="108" width="300" height="14" rx="7" fill="#d9d2ea"/>
+    <rect x="186" y="134" width="370" height="14" rx="7" fill="#e7e2f2"/>
+
+    <rect x="90" y="200" width="520" height="96" rx="18" fill="#ffffff" stroke="#e05a6d" stroke-width="3"/>
+    <circle cx="140" cy="248" r="26" fill="#f2c2c9"/>
+    <rect x="186" y="228" width="260" height="14" rx="7" fill="#f2c2c9"/>
+    <rect x="186" y="254" width="340" height="14" rx="7" fill="#f7dade"/>
+    <rect x="500" y="218" width="94" height="30" rx="15" fill="#e05a6d"/>
+    <text x="547" y="239" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">THREAT</text>
+
+    <rect x="90" y="320" width="520" height="96" rx="18" fill="#ffffff" stroke="#d9d2ea" stroke-width="2"/>
+    <circle cx="140" cy="368" r="26" fill="#cfc5e6"/>
+    <rect x="186" y="348" width="330" height="14" rx="7" fill="#d9d2ea"/>
+    <rect x="186" y="374" width="250" height="14" rx="7" fill="#e7e2f2"/>
+
+    <rect x="90" y="440" width="520" height="96" rx="18" fill="#ffffff" stroke="#f0a04b" stroke-width="3"/>
+    <circle cx="140" cy="488" r="26" fill="#f8d9b5"/>
+    <rect x="186" y="468" width="280" height="14" rx="7" fill="#f8d9b5"/>
+    <rect x="186" y="494" width="360" height="14" rx="7" fill="#fbe8d2"/>
+    <rect x="456" y="458" width="138" height="30" rx="15" fill="#f0a04b"/>
+    <text x="525" y="479" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">BELITTLING</text>
+
+    <rect x="90" y="560" width="520" height="96" rx="18" fill="#ffffff" stroke="#d9d2ea" stroke-width="2"/>
+    <circle cx="140" cy="608" r="26" fill="#cfc5e6"/>
+    <rect x="186" y="588" width="310" height="14" rx="7" fill="#d9d2ea"/>
+    <rect x="186" y="614" width="200" height="14" rx="7" fill="#e7e2f2"/>
+  </g>
+  <!-- classifier arrow -->
+  <path d="M640 368 H730" stroke="#6b5b95" stroke-width="6" stroke-linecap="round"/>
+  <path d="M718 352 L740 368 L718 384" fill="none" stroke="#6b5b95" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- bar chart of classified share -->
+  <g>
+    <text x="780" y="170" font-size="30" font-weight="700" fill="#3d3357">AI classification</text>
+    <text x="780" y="206" font-size="20" fill="#6b5b95">of posts directed at women leaders</text>
+    <rect x="780" y="250" width="320" height="40" rx="8" fill="#e7e2f2"/>
+    <rect x="780" y="250" width="256" height="40" rx="8" fill="#b9add6"/>
+    <text x="790" y="277" font-size="18" fill="#3d3357">Neutral</text>
+    <rect x="780" y="320" width="320" height="40" rx="8" fill="#e7e2f2"/>
+    <rect x="780" y="320" width="120" height="40" rx="8" fill="#f0a04b"/>
+    <text x="790" y="347" font-size="18" fill="#ffffff">Belittling</text>
+    <rect x="780" y="390" width="320" height="40" rx="8" fill="#e7e2f2"/>
+    <rect x="780" y="390" width="80" height="40" rx="8" fill="#e05a6d"/>
+    <text x="790" y="417" font-size="18" fill="#ffffff">Threats</text>
+    <rect x="780" y="460" width="320" height="40" rx="8" fill="#e7e2f2"/>
+    <rect x="780" y="460" width="72" height="40" rx="8" fill="#8e6fb8"/>
+    <text x="790" y="487" font-size="18" fill="#ffffff">Other</text>
+  </g>
+</svg>
